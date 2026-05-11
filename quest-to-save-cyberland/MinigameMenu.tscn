@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://dibpbyqsdk56y"]
 
+[ext_resource type="Texture2D" uid="uid://youx76nmvsyg" path="res://Assets/Artwork/Main_Menu_Screen.png" id="1_c5g2w"]
+
 [node name="MinigameMenu" type="Node2D" unique_id=388568099]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1007278227]
+offset_right = 1154.0
+offset_bottom = 643.0
+color = Color(0.6117647, 0.5058824, 0.42745098, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266462857]
+position = Vector2(561, 332)
+scale = Vector2(0.30859375, 0.30859375)
+texture = ExtResource("1_c5g2w")
