@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bnp7k1lpv48fj"]
+
+[ext_resource type="Texture2D" uid="uid://dbur7q5ojr4tc" path="res://Assets/Artwork/Character_Selection_.png" id="1_i7g0r"]
+
+[node name="CharacterSelection" type="Node2D" unique_id=47632700]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=972247644]
+offset_right = 1140.0
+offset_bottom = 645.0
+color = Color(0.6130475, 0.50567466, 0.4289799, 1)
+
+[node name="Screen1" type="Sprite2D" parent="." unique_id=2008842083]
+position = Vector2(249, 333)
+scale = Vector2(0.25048828, 0.25048828)
+texture = ExtResource("1_i7g0r")
+
+[node name="Screen2" type="Sprite2D" parent="." unique_id=1785087981]
+position = Vector2(573, 333)
+scale = Vector2(0.25048828, 0.25048828)
+texture = ExtResource("1_i7g0r")
+
+[node name="Screen3" type="Sprite2D" parent="." unique_id=1231817021]
+position = Vector2(897, 333)
+scale = Vector2(0.25048828, 0.25048828)
+texture = ExtResource("1_i7g0r")
