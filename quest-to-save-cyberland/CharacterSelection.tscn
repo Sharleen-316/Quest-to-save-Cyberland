@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bnp7k1lpv48fj"]
 
 [ext_resource type="Texture2D" uid="uid://dbur7q5ojr4tc" path="res://Assets/Artwork/Character_Selection_.png" id="1_i7g0r"]
+[ext_resource type="Texture2D" uid="uid://bfq4d3081wi1f" path="res://Assets/Artwork/Taby.png" id="2_scf6f"]
+[ext_resource type="Texture2D" uid="uid://v4swcj5vehnl" path="res://Assets/Artwork/_Con.png" id="3_w4d3d"]
+[ext_resource type="Texture2D" uid="uid://c1uptutinte3i" path="res://Assets/Artwork/Lappy.png" id="4_287kh"]
 
 [node name="CharacterSelection" type="Node2D" unique_id=47632700]
 
@@ -14,12 +17,74 @@ position = Vector2(249, 333)
 scale = Vector2(0.25048828, 0.25048828)
 texture = ExtResource("1_i7g0r")
 
+[node name="Label" type="Label" parent="Screen1" unique_id=2026354908]
+offset_left = -135.7349
+offset_top = 395.2281
+offset_right = 94.26511
+offset_bottom = 532.2281
+theme_override_font_sizes/font_size = 100
+text = "Taby"
+
+[node name="Button" type="Button" parent="Screen1" unique_id=61431918]
+offset_left = -335.34497
+offset_top = -451.1189
+offset_right = 315.38403
+offset_bottom = 307.39966
+icon = ExtResource("2_scf6f")
+flat = true
+expand_icon = true
+
 [node name="Screen2" type="Sprite2D" parent="." unique_id=1785087981]
 position = Vector2(573, 333)
 scale = Vector2(0.25048828, 0.25048828)
 texture = ExtResource("1_i7g0r")
 
+[node name="Label" type="Label" parent="Screen2" unique_id=1894679154]
+offset_left = -111.78168
+offset_top = 395.2281
+offset_right = 76.21832
+offset_bottom = 532.2281
+theme_override_font_sizes/font_size = 100
+text = "Con"
+
+[node name="Button" type="Button" parent="Screen2" unique_id=1827606175]
+offset_left = -487.04877
+offset_top = -598.8304
+offset_right = 475.07208
+offset_bottom = 363.29047
+icon = ExtResource("3_w4d3d")
+flat = true
+expand_icon = true
+
 [node name="Screen3" type="Sprite2D" parent="." unique_id=1231817021]
 position = Vector2(897, 333)
 scale = Vector2(0.25048828, 0.25048828)
 texture = ExtResource("1_i7g0r")
+
+[node name="Label" type="Label" parent="Screen3" unique_id=491219192]
+offset_left = -159.68811
+offset_top = 431.1579
+offset_right = 130.31189
+offset_bottom = 568.1579
+theme_override_font_sizes/font_size = 100
+text = "Lappy"
+
+[node name="Button" type="Button" parent="Screen3" unique_id=952515432]
+offset_left = -315.38403
+offset_top = -666.6978
+offset_right = 287.43848
+offset_bottom = 634.7603
+icon = ExtResource("4_287kh")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="." unique_id=1159214081]
+offset_left = 330.0
+offset_top = 36.0
+offset_right = 829.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Choose your crime solver!"
+horizontal_alignment = 1
+vertical_alignment = 1
