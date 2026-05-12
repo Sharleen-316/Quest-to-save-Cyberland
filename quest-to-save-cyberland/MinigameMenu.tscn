@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://dibpbyqsdk56y"]
 
 [ext_resource type="Texture2D" uid="uid://youx76nmvsyg" path="res://Assets/Artwork/Main_Menu_Screen.png" id="1_c5g2w"]
+[ext_resource type="Texture2D" uid="uid://ywgx5jtjlvc1" path="res://Assets/Artwork/Unlocked_Minigame.png" id="2_yil5c"]
+[ext_resource type="Texture2D" uid="uid://ddp5jbv5pcyql" path="res://Assets/Artwork/Locked_Minigame.png" id="3_7veau"]
+[ext_resource type="Texture2D" uid="uid://djar0dxvbao5u" path="res://Assets/Artwork/Dot (1).png" id="4_7veau"]
 
 [node name="MinigameMenu" type="Node2D" unique_id=388568099]
 
@@ -9,7 +12,112 @@ offset_right = 1154.0
 offset_bottom = 643.0
 color = Color(0.6117647, 0.5058824, 0.42745098, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266462857]
-position = Vector2(561, 332)
-scale = Vector2(0.30859375, 0.30859375)
+[node name="Background" type="Sprite2D" parent="." unique_id=1266462857]
+position = Vector2(574, 321.49994)
+scale = Vector2(0.52197266, 0.41064453)
 texture = ExtResource("1_c5g2w")
+
+[node name="CardGame" type="Button" parent="." unique_id=2036023889]
+offset_left = 162.0
+offset_top = 205.0
+offset_right = 417.0
+offset_bottom = 460.0
+icon = ExtResource("2_yil5c")
+flat = true
+expand_icon = true
+
+[node name="CardGameTitle" type="Label" parent="." unique_id=745367989]
+offset_left = 248.0
+offset_top = 402.0
+offset_right = 328.0
+offset_bottom = 477.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+text = "Who took 
+the heart?
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QnAGame" type="Button" parent="." unique_id=729862547]
+offset_left = 438.0
+offset_top = 205.0
+offset_right = 693.0
+offset_bottom = 460.0
+icon = ExtResource("3_7veau")
+flat = true
+expand_icon = true
+
+[node name="QnAGameTitle" type="Label" parent="." unique_id=1012589884]
+offset_left = 520.0
+offset_top = 402.0
+offset_right = 600.0
+offset_bottom = 477.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+text = "Collect
+gear
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BattleGame" type="Button" parent="." unique_id=1004662546]
+offset_left = 737.0
+offset_top = 205.0
+offset_right = 992.0
+offset_bottom = 460.0
+icon = ExtResource("3_7veau")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="." unique_id=1008737674]
+offset_left = 825.0
+offset_top = 402.0
+offset_right = 905.0
+offset_bottom = 477.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+text = "Mission
+Time!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dot" type="Sprite2D" parent="." unique_id=1813326752]
+position = Vector2(376.75, 338.00003)
+scale = Vector2(0.05346681, 0.05346681)
+texture = ExtResource("4_7veau")
+
+[node name="Dot1" type="Sprite2D" parent="." unique_id=1893275151]
+position = Vector2(425.75, 338.00003)
+scale = Vector2(0.05346681, 0.05346681)
+texture = ExtResource("4_7veau")
+
+[node name="Dot2" type="Sprite2D" parent="." unique_id=1775368183]
+position = Vector2(474.75, 338)
+scale = Vector2(0.05346681, 0.05346681)
+texture = ExtResource("4_7veau")
+
+[node name="Dot3" type="Sprite2D" parent="." unique_id=1852739854]
+position = Vector2(664.75, 338.00003)
+scale = Vector2(0.05346681, 0.05346681)
+texture = ExtResource("4_7veau")
+
+[node name="Dot4" type="Sprite2D" parent="." unique_id=1578614979]
+position = Vector2(713.75, 338.00003)
+scale = Vector2(0.05346681, 0.05346681)
+texture = ExtResource("4_7veau")
+
+[node name="Dot5" type="Sprite2D" parent="." unique_id=1463858542]
+position = Vector2(762.75, 338)
+scale = Vector2(0.05346681, 0.05346681)
+texture = ExtResource("4_7veau")
+
+[node name="Heading" type="Label" parent="." unique_id=1835095045]
+offset_left = 322.0
+offset_top = 122.0
+offset_right = 859.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Collect the necessary items 
+to save the town!"
+horizontal_alignment = 1
+vertical_alignment = 1
