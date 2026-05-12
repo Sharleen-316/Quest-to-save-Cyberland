@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://crfp3ghmkn8hk"]
+
+[ext_resource type="Texture2D" uid="uid://bvqvv2588vt6u" path="res://Assets/Artwork/BoardsPop-up.png" id="1_7ioot"]
+[ext_resource type="Texture2D" uid="uid://brhmqx1h1hwcw" path="res://Assets/Artwork/PlayContinue_Button.png" id="2_ogl6o"]
+
+[node name="CardGame" type="Node2D" unique_id=1283530743]
+
+[node name="Background" type="ColorRect" parent="." unique_id=1724908534]
+offset_right = 1151.0
+offset_bottom = 652.0
+
+[node name="Label" type="Label" parent="." unique_id=111477359]
+offset_left = 697.0
+offset_top = 241.0
+offset_right = 1076.0
+offset_bottom = 354.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Who stole the 
+heart of Cyberland?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1300744370]
+offset_left = 718.0
+offset_top = 415.0
+offset_right = 1023.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 20
+
+[node name="CardsPlaceholder" type="Sprite2D" parent="." unique_id=1527480418]
+position = Vector2(329.5, 354)
+scale = Vector2(0.31005853, 0.36328122)
+texture = ExtResource("1_7ioot")
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1078339853]
+offset_right = 1155.0
+offset_bottom = 657.0
+color = Color(0, 0, 0, 0.63529414)
+
+[node name="Pop-up" type="Sprite2D" parent="." unique_id=1960841806]
+position = Vector2(547, 347)
+scale = Vector2(0.49072263, 0.3706055)
+texture = ExtResource("1_7ioot")
+
+[node name="Label" type="Label" parent="Pop-up" unique_id=340023115]
+offset_left = -672.47766
+offset_top = -558.5454
+offset_right = 690.52234
+offset_bottom = 278.4546
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 100
+text = "- Select two cards on 
+the board
+- Find all the matching pairs 
+on the board
+- Work out who stole 
+the heart"
+
+[node name="Button" type="Button" parent="." unique_id=965751802]
+offset_left = 283.0
+offset_top = 323.0
+offset_right = 766.0
+offset_bottom = 754.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Play"
+icon = ExtResource("2_ogl6o")
+flat = true
+icon_alignment = 1
+expand_icon = true
