@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://bnp7k1lpv48fj"]
 
 [ext_resource type="Texture2D" uid="uid://dbur7q5ojr4tc" path="res://Assets/Artwork/Character_Selection_.png" id="1_i7g0r"]
+[ext_resource type="Script" uid="uid://5g7xm3mid1we" path="res://character_selection.gd" id="1_w4d3d"]
 [ext_resource type="Texture2D" uid="uid://bfq4d3081wi1f" path="res://Assets/Artwork/Taby.png" id="2_scf6f"]
 [ext_resource type="Texture2D" uid="uid://v4swcj5vehnl" path="res://Assets/Artwork/_Con.png" id="3_w4d3d"]
 [ext_resource type="Texture2D" uid="uid://c1uptutinte3i" path="res://Assets/Artwork/Lappy.png" id="4_287kh"]
 
 [node name="CharacterSelection" type="Node2D" unique_id=47632700]
+script = ExtResource("1_w4d3d")
 
 [node name="Background" type="ColorRect" parent="." unique_id=972247644]
-offset_right = 1140.0
+offset_right = 1162.0
 offset_bottom = 645.0
 color = Color(0.6130475, 0.50567466, 0.4289799, 1)
 
@@ -91,3 +93,7 @@ offset_bottom = 481.7627
 icon = ExtResource("4_287kh")
 flat = true
 expand_icon = true
+
+[connection signal="pressed" from="Taby" to="." method="_on_taby_pressed"]
+[connection signal="pressed" from="Con" to="." method="_on_con_pressed"]
+[connection signal="pressed" from="Lappy" to="." method="_on_lappy_pressed"]
