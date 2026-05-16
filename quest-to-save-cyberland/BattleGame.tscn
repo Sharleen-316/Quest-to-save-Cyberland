@@ -12,12 +12,103 @@ scale = Vector2(0.5644531, 0.31298828)
 texture = ExtResource("1_ljpdk")
 
 [node name="CharacterSpritePlaceholder" type="ColorRect" parent="." unique_id=1101951986]
-offset_left = 165.0
-offset_top = 223.0
-offset_right = 345.0
-offset_bottom = 467.0
+offset_left = 166.0
+offset_top = 274.0
+offset_right = 346.0
+offset_bottom = 518.0
+color = Color(0.84705883, 0.84705883, 0.84705883, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="TrollPlaceholder" type="ColorRect" parent="." unique_id=1500107767]
+offset_left = 737.0
+offset_top = 286.0
+offset_right = 917.0
+offset_bottom = 530.0
+color = Color(0.30240792, 0.49882233, 0.26199228, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="WeaponsBayPlaceholder" type="ColorRect" parent="." unique_id=1028807477]
+offset_left = 23.0
+offset_top = 136.0
+offset_right = 281.0
+offset_bottom = 184.0
+color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="." unique_id=526221249]
+offset_left = 962.0
+offset_top = 81.0
+offset_right = 1113.0
+offset_bottom = 136.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Score: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Battery" type="ColorRect" parent="." unique_id=1690077604]
+offset_left = 213.0
+offset_top = 90.0
+offset_right = 279.45834
+offset_bottom = 123.0
+color = Color(0.5254902, 0.78431374, 0.5568628, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BatteryPercentageText" type="Label" parent="." unique_id=1215084032]
+offset_left = 125.0
+offset_top = 83.0
+offset_right = 210.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 30
+text = "100%"
+metadata/_edit_use_anchors_ = true
+
+[node name="Seconds" type="Label" parent="." unique_id=120351731]
+offset_left = 1054.0
+offset_top = 24.0
+offset_right = 1111.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = ":00"
+metadata/_edit_use_anchors_ = true
+
+[node name="Minutes" type="Label" parent="." unique_id=1282915528]
+offset_left = 1030.0
+offset_top = 24.0
+offset_right = 1053.0
+offset_bottom = 80.375
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterPicPlaceholder2" type="ColorRect" parent="." unique_id=1301955619]
+offset_left = 23.0
+offset_top = 26.0
+offset_right = 113.0
+offset_bottom = 124.6087
+color = Color(0.84705883, 0.84705883, 0.84705883, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterName" type="Label" parent="." unique_id=761461941]
+offset_left = 125.0
+offset_top = 37.0
+offset_right = 212.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 30
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScenarioCard" type="ColorRect" parent="." unique_id=613536326]
+offset_left = 707.0
+offset_top = 172.0
+offset_right = 930.0
+offset_bottom = 269.0
 
 [node name="Fade" type="ColorRect" parent="." unique_id=1904374753]
+visible = false
 offset_left = -2.0
 offset_top = 1.0
 offset_right = 1156.0
@@ -59,12 +150,14 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1604658823]
+[node name="EndMessagePop-up" type="Sprite2D" parent="." unique_id=1604658823]
+visible = false
 position = Vector2(569, 295)
 scale = Vector2(0.2966309, 0.18847656)
 texture = ExtResource("2_jskys")
 
-[node name="Label" type="Label" parent="." unique_id=1046639309]
+[node name="EndMessage" type="Label" parent="." unique_id=1046639309]
+visible = false
 offset_left = 392.0
 offset_top = 217.0
 offset_right = 748.0
@@ -73,9 +166,26 @@ theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
 theme_override_font_sizes/font_size = 30
 text = "Insert end message here"
 
-[node name="Button" type="Button" parent="." unique_id=1682241923]
+[node name="RetyButtonSole" type="Button" parent="." unique_id=1682241923]
+visible = false
 offset_left = 464.0
 offset_top = 326.0
 offset_right = 654.0
 offset_bottom = 385.0
 text = "Retry"
+
+[node name="RetyButtonDuo" type="Button" parent="." unique_id=732025990]
+visible = false
+offset_left = 441.0
+offset_top = 316.0
+offset_right = 539.0
+offset_bottom = 365.0
+text = "Retry"
+
+[node name="ContinueButton" type="Button" parent="." unique_id=1836193339]
+visible = false
+offset_left = 587.0
+offset_top = 317.0
+offset_right = 685.0
+offset_bottom = 366.0
+text = "Continue"
