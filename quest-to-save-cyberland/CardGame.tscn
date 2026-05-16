@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://crfp3ghmkn8hk"]
+
+[ext_resource type="Texture2D" uid="uid://bvqvv2588vt6u" path="res://Assets/Artwork/BoardsPop-up.png" id="1_m8r8a"]
+[ext_resource type="Texture2D" uid="uid://brhmqx1h1hwcw" path="res://Assets/Artwork/PlayContinue_Button.png" id="2_t7o6e"]
+
+[node name="CardGame" type="Node2D" unique_id=1283530743]
+
+[node name="Background" type="ColorRect" parent="." unique_id=1724908534]
+offset_right = 1151.0
+offset_bottom = 652.0
+
+[node name="QuestionText" type="Label" parent="." unique_id=111477359]
+visible = false
+offset_left = 695.0
+offset_top = 241.0
+offset_right = 1074.0
+offset_bottom = 354.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Who stole the 
+heart of Cyberland?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1300744370]
+visible = false
+offset_left = 718.0
+offset_top = 415.0
+offset_right = 1023.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 20
+
+[node name="CardsPlaceholder" type="Sprite2D" parent="." unique_id=1527480418]
+position = Vector2(329.5, 354)
+scale = Vector2(0.31005853, 0.36328122)
+texture = ExtResource("1_m8r8a")
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1078339853]
+visible = false
+offset_right = 1155.0
+offset_bottom = 657.0
+color = Color(0, 0, 0, 0.63529414)
+
+[node name="Pop-up" type="Sprite2D" parent="." unique_id=1960841806]
+visible = false
+position = Vector2(547, 347)
+scale = Vector2(0.49072263, 0.3706055)
+texture = ExtResource("1_m8r8a")
+
+[node name="InstructionsText" type="Label" parent="." unique_id=340023115]
+visible = false
+offset_left = 245.0
+offset_top = 176.0
+offset_right = 871.0
+offset_bottom = 417.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "- Select two cards on the board
+- Find all the matching pairs on 
+the board
+- Work out who stole the heart"
+
+[node name="PlayButton" type="Button" parent="." unique_id=965751802]
+visible = false
+offset_left = 305.0
+offset_top = 364.0
+offset_right = 728.0
+offset_bottom = 639.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Play"
+icon = ExtResource("2_t7o6e")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="AnswerText" type="Label" parent="." unique_id=1513419652]
+offset_left = 668.0
+offset_top = 241.0
+offset_right = 1103.0
+offset_bottom = 354.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "The trolls stole 
+the heart of Cyberland"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="." unique_id=369339235]
+offset_left = 609.0
+offset_top = 321.0
+offset_right = 1104.0
+offset_bottom = 606.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 40
+text = "Continue"
+icon = ExtResource("2_t7o6e")
+flat = true
+icon_alignment = 1
+expand_icon = true
