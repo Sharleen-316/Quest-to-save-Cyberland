@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://cu8x6r1ton4sj"]
+
+[ext_resource type="Texture2D" uid="uid://bvqvv2588vt6u" path="res://Assets/Artwork/BoardsPop-up.png" id="1_242fm"]
+[ext_resource type="Texture2D" uid="uid://brhmqx1h1hwcw" path="res://Assets/Artwork/PlayContinue_Button.png" id="2_nk2ic"]
+
+[node name="WeaponsGame" type="Node2D" unique_id=140620075]
+
+[node name="Background" type="ColorRect" parent="." unique_id=1391440726]
+offset_right = 1147.0
+offset_bottom = 644.0
+
+[node name="WeaponsBayPlaceholder" type="ColorRect" parent="." unique_id=1114242554]
+offset_left = 268.0
+offset_top = 10.0
+offset_right = 582.0
+offset_bottom = 72.0
+color = Color(0.27022192, 0.27022192, 0.2702219, 1)
+
+[node name="WeaponsBayText" type="Label" parent="." unique_id=562985855]
+offset_left = 20.0
+offset_top = 24.0
+offset_right = 265.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 25
+text = "Weapons Unlocked: "
+
+[node name="BatteryPlaceholder" type="ColorRect" parent="." unique_id=139563944]
+offset_left = 912.0
+offset_top = 10.0
+offset_right = 1035.0
+offset_bottom = 72.0
+color = Color(0.5294118, 0.76862746, 0.4117647, 1)
+
+[node name="BatteryText" type="Label" parent="." unique_id=1650437367]
+offset_left = 1054.0
+offset_top = 24.0
+offset_right = 1118.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(0.27058825, 0.27058825, 0.27058825, 1)
+theme_override_font_sizes/font_size = 25
+text = "100%"
+
+[node name="ExampleBackground" type="Sprite2D" parent="." unique_id=1290775339]
+position = Vector2(322, 365)
+scale = Vector2(0.3088379, 0.3083496)
+texture = ExtResource("1_242fm")
+
+[node name="QuestionText" type="Label" parent="." unique_id=1297006309]
+offset_left = 731.0
+offset_top = 109.0
+offset_right = 1023.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0.27058825, 0.27058825, 0.27058825, 1)
+theme_override_font_sizes/font_size = 35
+text = "What is this 
+an example of?"
+horizontal_alignment = 1
+
+[node name="Option1Button" type="Button" parent="." unique_id=965895184]
+offset_left = 709.0
+offset_top = 246.0
+offset_right = 1031.0
+offset_bottom = 335.0
+text = "Asking someone to take their 
+comment down"
+
+[node name="Option2Button" type="Button" parent="." unique_id=1947593676]
+offset_left = 709.0
+offset_top = 376.0
+offset_right = 1031.0
+offset_bottom = 465.0
+text = "Telling a trusted adult"
+
+[node name="Option3Button" type="Button" parent="." unique_id=1208149299]
+offset_left = 709.0
+offset_top = 506.0
+offset_right = 1031.0
+offset_bottom = 595.0
+text = "Eating pie"
+
+[node name="ExampleText" type="Label" parent="." unique_id=654312261]
+offset_left = 127.0
+offset_top = 332.0
+offset_right = 514.0
+offset_bottom = 387.0
+theme_override_colors/font_color = Color(0.27058825, 0.27058825, 0.27058825, 1)
+theme_override_font_sizes/font_size = 40
+text = "Insert Example here"
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1057865627]
+visible = false
+offset_right = 1147.0
+offset_bottom = 644.0
+color = Color(0, 0, 0, 0.63529414)
+
+[node name="InstructionsPop-up" type="Sprite2D" parent="." unique_id=975235762]
+visible = false
+position = Vector2(542.125, 340)
+scale = Vector2(0.38952637, 0.39910892)
+texture = ExtResource("1_242fm")
+
+[node name="InstructionsText" type="Label" parent="." unique_id=1933449051]
+visible = false
+offset_left = 272.0
+offset_top = 120.0
+offset_right = 863.0
+offset_bottom = 481.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 30
+text = "- Collect all the weapons you 
+need to fight the trolls in the last battle 
+by identifying the method of online hate 
+shown on the left
+- Keep an eye on your battery 
+though, any wrong guesses cases you 
+to lose charge
+- Good luck and have fun"
+
+[node name="PlayButton" type="Button" parent="." unique_id=1018932621]
+visible = false
+offset_left = 387.0
+offset_top = 451.0
+offset_right = 615.0
+offset_bottom = 650.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 25
+text = "Play"
+icon = ExtResource("2_nk2ic")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="EndGamePop-up" type="Sprite2D" parent="." unique_id=1190620224]
+visible = false
+position = Vector2(587.43756, 336.34375)
+scale = Vector2(0.34417728, 0.28744507)
+texture = ExtResource("1_242fm")
+
+[node name="EndMessageText" type="Label" parent="." unique_id=782842111]
+visible = false
+offset_left = 367.43753
+offset_top = 256.34375
+offset_right = 819.4375
+offset_bottom = 343.34375
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+theme_override_font_sizes/font_size = 30
+text = "You collected all 3 weapons! 
+You can now beat the trolls!"
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="." unique_id=318878470]
+visible = false
+offset_left = 461.43753
+offset_top = 321.34375
+offset_right = 689.4375
+offset_bottom = 520.34375
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+text = "Continue"
+icon = ExtResource("2_nk2ic")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="WeaponUnlockPop-up" type="Sprite2D" parent="." unique_id=1189717397]
+visible = false
+position = Vector2(583, 323)
+scale = Vector2(0.25976563, 0.25976563)
+texture = ExtResource("1_242fm")
+
+[node name="WeaponUnlockText" type="Label" parent="." unique_id=2044606637]
+visible = false
+offset_left = 415.0
+offset_top = 193.0
+offset_right = 763.0
+offset_bottom = 370.0
+theme_override_colors/font_color = Color(0.27058825, 0.27058825, 0.27058825, 1)
+theme_override_font_sizes/font_size = 30
+text = "You unlocked the Take 
+Down ability! Using this 
+makes bullets fly down 
+onto your enemies"
+horizontal_alignment = 1
+
+[node name="Continue1Button" type="Button" parent="." unique_id=766088341]
+visible = false
+offset_left = 370.0
+offset_top = 331.0
+offset_right = 789.0
+offset_bottom = 528.0
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+text = "Continue"
+icon = ExtResource("2_nk2ic")
+flat = true
+icon_alignment = 1
+expand_icon = true

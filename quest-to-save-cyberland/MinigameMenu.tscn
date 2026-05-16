@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://youx76nmvsyg" path="res://Assets/Artwork/Main_Menu_Screen.png" id="1_c5g2w"]
 [ext_resource type="Texture2D" uid="uid://ywgx5jtjlvc1" path="res://Assets/Artwork/Unlocked_Minigame.png" id="2_yil5c"]
 [ext_resource type="Texture2D" uid="uid://ddp5jbv5pcyql" path="res://Assets/Artwork/Locked_Minigame.png" id="3_7veau"]
-[ext_resource type="Texture2D" uid="uid://djar0dxvbao5u" path="res://Assets/Artwork/Dot (1).png" id="4_7veau"]
+[ext_resource type="Texture2D" uid="uid://djar0dxvbao5u" path="res://Assets/Artwork/Dot.png" id="4_7veau"]
 
 [node name="MinigameMenu" type="Node2D" unique_id=388568099]
 
