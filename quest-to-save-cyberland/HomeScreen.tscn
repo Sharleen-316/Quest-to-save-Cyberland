@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://mgd8slfu7850"]
 
+[ext_resource type="Script" uid="uid://bltce7tn27u04" path="res://home_screen.gd" id="1_16mhu"]
 [ext_resource type="Texture2D" uid="uid://cplx833a2donj" path="res://Assets/Artwork/Town.png" id="1_bu243"]
 [ext_resource type="Texture2D" uid="uid://dqmsnnd510kce" path="res://Assets/Artwork/IMG_1535.PNG" id="2_iapcu"]
 
 [node name="HomeScreen" type="Node2D" unique_id=204099889]
+script = ExtResource("1_16mhu")
 
 [node name="Town" type="Sprite2D" parent="." unique_id=1262234300]
 position = Vector2(576, 322.50006)
@@ -20,7 +22,7 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Label" type="Label" parent="." unique_id=1159271636]
+[node name="Title" type="Label" parent="." unique_id=1159271636]
 offset_left = 358.0
 offset_top = 22.0
 offset_right = 831.0
@@ -31,3 +33,5 @@ text = "Quest to
 save Cyberland"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
